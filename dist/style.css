@@ -11,25 +11,24 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 #content {
   display: flex;
   flex-direction: column;
   color: #fff;
-  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 header {
     background-color: #000000c4;
     text-align: center;
     width: 100%;
-    position: absolute;
-    top: 0;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 button {
@@ -45,6 +44,24 @@ button:hover {
     outline: 1px solid #fff;
 }
 
+.home {
+    background-color: #000000c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    text-align: center;
+    padding: 20px;
+}
+
+.home img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
 .menu {
     background-color: #000000c4;
     display: flex;
@@ -52,10 +69,30 @@ button:hover {
     justify-content: center;
     width: 50vw;
     text-align: center;
+    padding: 10px;
 }
 
 .menuItem {
     padding: 10px;
     text-align: center;
+}
+
+.contact {
+    background-color: #000000c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    padding: 10px;
+}
+
+.contact li {
+    margin: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .menu {
+        width: 90vw;
+    }
 }
 

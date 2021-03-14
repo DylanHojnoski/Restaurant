@@ -27,7 +27,7 @@ function createMenu() {
 
         menu.append(item);
     }
-    content.append(menu);
+    return menu;
 }
 
-export default createMenu();
+export default createMenu(); 
